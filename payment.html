@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEG3125 Project1</title>
+
+  <!-- CSS STYLESHEET -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&family=Ubuntu:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- BOOTSTRAP SCRIPTS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <section class="appointments">
+    <div class="container-fluid">
+      <div class="row">
+        <div id="join-us">
+          <!-- action = "Experts.html" -->
+          <form  method="post" enctype="text/plain">
+            <div class="mb3">
+              <div class="mb3">
+                <h4> Card Information</h4>
+              </div>
+
+              <div class="mb-3 col-lg-6">
+                <select id = "type-bar" class="form-select form-select-sm">
+                  <option selected>Choose the type of Card</option>
+                  <option value="Visa">Visa</option>
+                  <option value="Visa Debit">Visa Debit</option>
+                  <option value="MasterCard">MasterCard</option>
+                  <option value="Credit Card">Credit Card</option>
+                </select>
+              </div>
+
+              <div class="mb-3 col-lg-6">
+                <input type="text" class="form-control" id="Cname-bar" placeholder="Enter your Name as it appears on your card">
+              </div>
+
+              <div class="mb-3 col-lg-6">
+                <input type="text" class="form-control" id="card-bar" placeholder="Enter your Card Number">
+              </div>
+
+
+              <div class="mb-3 col-lg-6">
+                <input type="email" class="form-control" id="date-bar" placeholder="Enter the expiry date">
+              </div>
+
+              <div class="mb-3 col-lg-6">
+                <input type="text" class="form-control" id="cvv-bar" placeholder="Enter the cvv">
+              </div>
+
+            </div>
+
+
+              <!-- <div class="mb-3 col-lg-6">
+                <input type="text" class="form-control" id="time-value" placeholder="Enter time of Appointment">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input id = "date-value" type="date" name="TheDate"><br />
+              </div> -->
+            </div>
+
+
+
+
+            <div class="mb-3 col-lg-6">
+              <button id = "confirm-button"class="btn btn-primary" type="submit">Confirm</button>
+            </div>
+
+          </form>
+        </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+  </section>
+  <!-- BOOTSTRAP SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+  document.getElementById('confirm-button').onclick = function(
+  ){
+    alert("Registration Successful!");
+    // var name = document.getElementById("name-bar").value;
+    // var phone=document.getElementById("phone-bar").value;
+    // var email=document.getElementById("email-bar").value;
+    // var service=document.getElementById("service-bar").value;
+    // var expert=document.getElementById("expert-bar").value;
+    // var time =document.getElementById("time-value").value;
+    // var date =document.getElementById("date-value").value;
+    //
+    // document.write("The booking details have been sent to " + email+"<br>" );
+    // document.write("<br>");
+    // document.write("BOOKING CONFIRMATION:"+"<br>");
+    // document.write("<br>");
+    // document.write("Name: "+ name + "<br>");
+    // document.write("Phone Number: "+ phone + "<br>");
+    // document.write("Email: "+ email + "<br>");
+    // document.write("Service: "+ service + "<br>");
+    // document.write("Expert: "+ expert + "<br>");
+    // document.write("Date: "+ date + "<br>");
+    // document.write("Time: "+ time + "<br>");
+  }
+  </script>
+</body>
+
+</html>
